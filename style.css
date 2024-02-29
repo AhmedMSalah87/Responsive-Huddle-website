@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 6.4rem 0;
+}
+
+.nav-bar {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto 8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: hsl(192, 100%, 9%);
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 1.6rem 6.4rem;
+  border-radius: 5rem;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-text {
+  flex: 45%;
+}
+
+.hero-img {
+  flex: 55%;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 2.4rem;
+}
+
+.hero-section p {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 2.4rem;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.hero-section a,
+.action-modal a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  padding: 1.8rem 6.4rem;
+  border-radius: 5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 16rem auto;
+}
+
+.container img {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  padding: 6.4rem;
+  margin-bottom: 4.8rem;
+  box-shadow: 2px 4px 8px 8px hsla(193, 100%, 96%, 0.5);
+}
+
+.flex-container h2 {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 1.6rem;
+}
+
+.flex-container p {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsl(208, 11%, 55%);
+}
+
+.flex-container > * {
+  flex: 1;
+}
+
+.action-modal {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 32px 64px;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.action-modal h2 {
+  margin-bottom: 2.4rem;
+}
+
+footer {
+  position: relative;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 16rem 0;
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.grid {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.social-icon img {
+  height: 3.2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 4.8rem;
+}
+
+.flex {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.flex-direct {
+  flex-direction: column;
+}
+
+.information {
+  align-items: flex-start;
+}
+
+.info {
+  align-items: center;
+}
+
+.social-icon {
+  align-self: baseline;
+  margin-top: 5.6rem;
+}
+
+footer h2 {
+  text-transform: capitalize;
+  color: hsl(192, 100%, 9%);
+}
+
+.copyright {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 6.4rem;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (width < 768px) {
+  .nav-bar img {
+    width: 120px;
+  }
+  .hero-text,
+  .flex-container {
+    text-align: center;
+  }
+  .nav-bar a {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.4rem;
+  }
+
+  .flex-container,
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .flex-order {
+    order: -1;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 2.4rem;
+  }
+
+  .grid {
+    gap: 0;
+  }
+
+  .social-icon {
+    justify-content: center;
+  }
+
+  .action-modal {
+    width: 90%;
+  }
+}
+
+@media screen and (width > 768px) and (width < 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
